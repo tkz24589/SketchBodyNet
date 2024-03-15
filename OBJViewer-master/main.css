@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	background-color: rgb(85, 122, 132);
+	color: #fff;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+}
+
+
+a {
+	color: #ff0;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#info {
+	position: absolute;
+	top: 10px;
+	width: 50%;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+
+.dg.ac {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+#left {
+	background-color: rgb(85, 122, 132);
+	display: flex;
+	width: 50%;
+	height: 100%;
+	top: 20px;
+
+}
+#right {
+	background-color: rgb(85, 122, 132);
+	display: flex;
+	width: 50%;
+	height: 100%;
+	top: 20px;
+
+}
+#content {
+	width: 100%;
+	background-color: rgb(85, 122, 132);
+	display: flex;
+	flex-direction: row;
+}
+#cv {
+	margin-top: -10px;
+}
+#scene {
+	padding:.25rem;
+	background-color:#fff;
+	border:1px solid #dee2e6;
+	border-radius:.25rem;
+	max-width:100%;
+	margin-top:5%
+}
+.modal-dialog{
+	max-width: 1000px;
+	width: 1000px;
+}
+#down, #fresh{
+    position: flex;
+    display: none;
+    margin: 0 auto;
+    flex-direction: colum;
+}
+#container{
+    background-color: rgb(85, 122, 132);
+    margin-top: 5%;
+}
+.img-rounded {
+    width:25%;
+    height:auto;
+}
+.jumbotron {
+    padding-top:2px;
+    padding-bottom:2px
+}
+#canvas {
+    touch-action: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Example - Drawing Board</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="content">
+<div id="left">
+    <div id='cv' class="container text-center mt-1 pt-1">
+      <div>
+          <button class="btn btn-warning" id="eraser" title="see Example" style="margin-top:15px;">Eraser</button>
+          <input type="range" min="0" max="10" step="0.1" class="custom-range" id="customRange1" style="width: 200px;margin:20px auto" title="Adjust the line thickness">
+      </div>
+      <div class="my-3">
+          <canvas id="canvas" class="img-thumbnail" title="draw human sketch"></canvas>
+      </div>
+      <div>
+    <!--          <button class="btn btn-success" id="downl" title="Submit sketch"  data-toggle="modal" data-target="#myModal">Submit</button>-->
+          <input type="file" id ="input" accept="image/*" style="display:none;"/>
+          <button class="btn btn-success" id="upload" title="Upload sketch">Upload</button>
+          <button class="btn btn-success" id="downl" title="Submit sketch">Submit</button>
+          <button class="btn btn-warning" id="example" title="see Example">Example</button>
+          <button class="btn btn-danger" id="clean" title="Clean sketch">Clear</button>
+      </div>
+    </div>
+</div>
+<div id="right">
+    <div id='cv1' class="container text-center mt-1 pt-1">
+        <div id="container"></div>
+            <div class="jumbotron" id="log">
+                <h2 style="color:black">welcome to SketchBody</h2>
+                <p style="color:black">draw in the black box on the right, then <b>SUBMIT</b> your sketch to get 3D model(<b>Please use PC</b>),you can also <b>CLEAR</b> and re-paint</b></p>
+<!--                <p><a class="btn btn-primary btn-lg" role="button">learn more</a></p>-->
+                <p style="color:black"><b>example:</b></p>
+                <img src="img/example/t (1).jpg" class="img-rounded">
+                <img src="img/example/t (2).jpg" class="img-rounded">
+                <img src="img/example/t (3).jpg" class="img-rounded">
+                <img src="img/example/t (4).jpg" class="img-rounded">
+                <img src="img/example/t (5).jpg" class="img-rounded">
+                <img src="img/example/t (6).jpg" class="img-rounded">
+                <img src="img/example/t (7).jpg" class="img-rounded">
+                <img src="img/example/t (8).jpg" class="img-rounded">
+                <img src="img/example/t (9).jpg" class="img-rounded">
+
+            </div>
+        <div>
+            <button type="button" class="btn btn-success" id="down" onclick="downloadData()">
+                Download OBJ file
+            </button>
+            <button type="button" class="btn btn-warning" id="fresh" onclick="freshData()">
+                See example
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 模态框（Modal） -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-body">-->
+<!--        <div id="container"></div>-->
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--        <button type="button" class="btn btn-default" data-dismiss="modal">关闭-->
+<!--        </button>-->
+<!--        <button type="button" class="btn btn-success" onclick="downloadData()">-->
+<!--          Download OBJ file-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--  </div>&lt;!&ndash; /.modal &ndash;&gt;-->
+<!--</div>-->
+</div>
+<!--Bootstrap-->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+<script src="./src/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript" src="js/OBJLoader.js"></script>
+<script type="text/javascript" src="js/TrackballControls.js"></script>
+<script type="text/javascript" src="js/render.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

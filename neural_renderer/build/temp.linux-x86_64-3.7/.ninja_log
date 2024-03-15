@@ -1,0 +1,8 @@
+# ninja log v5
+0	10605	1653988203326395930	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/load_textures_cuda.o	81a2eed77064035c
+10	6295	1653989120771271099	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/load_textures_cuda_kernel.o	cfcdb7382ab1007f
+9	11174	1653989125647320335	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/load_textures_cuda.o	9c72cf6f2e012b47
+0	6337	1653989132239386561	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/rasterize_cuda_kernel.o	10be9811d336fb5d
+0	11776	1653989137675440884	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/rasterize_cuda.o	dc28988fe0f856ce
+1	5968	1653989143907502847	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/create_texture_image_cuda_kernel.o	f6d8dd2fe1dc736a
+0	10697	1653989148635549630	/home/stu/2Dto3D/SPIN/neural_renderer/build/temp.linux-x86_64-3.7/neural_renderer/cuda/create_texture_image_cuda.o	d7afb3472dc7bafa
